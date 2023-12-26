@@ -22,18 +22,30 @@
     </head>
     <body>
         <!--This is a button-->
-        <button title="Good Luck"> <!--Opening tagg-->
+        <button title="Good Luck" onclick="greetings('Give me the money')"> <!--Opening tagg-->
             Hello bitch
         </button><!--Closing tagg-->
         <!--////////////////////////////////////////////////////////-->
         <!--This is a paragraph-->
         <p><!--Opening tagg-->
             Paragraph of 
-            <button class="yellow-button">
+            <button class="yellow-button" onclick="
+            //You can enter javaScript code inside the onclick attribute which is an event handler
+            console.log('come on');
+            alert('Yamete Kudasai!!!!');
+            ">
                 Touch Me
             </button>
             text
         </p><!--Closing tagg-->
+
+        <!--the script tag help us write javascript code-->
+        <script>
+            //you can use functions to trigger javascript code
+            function greetings(str){
+                alert(str);
+            }
+        </script>
     </body>
 
 </html>
