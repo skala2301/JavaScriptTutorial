@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rock, Paper And Scissors
+        </title>
+    </head>
+    <body>
+        <section 
+            style="
+            display: flex;
+            align-content: flex-start;">
+            <section 
+                style="
+                display: inline-block;">
+                <ul 
+                    style="
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;">
+                    <!---->
+                    <li>
+                        <button onclick="setSelection('rock')">
+                            Rock
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="setSelection('paper')">
+                            Paper
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="setSelection('scissors')">
+                            Scissors
+                        </button>
+                    </li>
+                
+                </ul>
+            </section>
+        
+            <section 
+                style="
+                display:inline-block;
+                align-content: flex-start;">
+                <section 
+                    class="label" 
+                    style="
+                    width:100%;
+                    text-align: center;">
+                    Score
+                </section>
+                <!--Here will be the result-->
+                <section 
+                    class="result"
+                    style="
+                    width:100%;
+                    text-align: center;"
+                    >
+                    Result <p id="result">Non</p> <p id="resultText">Some Text</p>
+                </section>
+            </section>
+        </section>
+        
+        <section>
+            <button>
+                Restart
+            </button>
+        </section>
+        
+
+        <script src="3-rock-paper-scissors-game.js"></script>
+    </body>
+
+</html>
