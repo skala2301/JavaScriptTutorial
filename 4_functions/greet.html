@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="greet.js"></script>
+
+    <title>
+        Greet
+    </title>
+    <!--This is the navigation bar where you can navigate to any other excercise-->
+    <nav>
+        <a href="./functions.html">Home</a>
+        <a href="./temperature-convert.html">Temperature Excercise</a>
+    </nav>
+
+</head>
+
+<body>
+    <div class="bg-blue-500 text-white p-4"> Greet</div>
+
+    <!--This is the dialog element-->
+    <dialog>
+        <!--all elements into the dialog will be mounted with the dialog-->
+        <button onclick="closeModal()" autofocus>Close</button>
+        <p>greettings</p>
+    </dialog>
+
+    <section>
+        <!--Input element where you may enter any text-->
+        <input type="text" name="inputName" id="inputName" oninput="modName(event)">
+        <!--when you push the button greet will be called, in this case the dialog will be shown with the text entered in the text-->
+        <button onclick="greet()">
+            Click for Greet
+        </button>
+    </section>
+
+</body>
+
+</html>

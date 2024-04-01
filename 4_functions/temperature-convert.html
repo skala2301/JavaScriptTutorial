@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    
+
+    <title>
+        Greet
+    </title>
+    <!--This is the navigation bar where you can navigate to any other excercise-->
+    <nav>
+        <a href="./functions.html">Home</a>
+        <a href="./greet.html">Greet excercise</a>
+    </nav>
+
+</head>
+
+<body>
+    <div class="bg-blue-500 text-white p-4"> Temperature Converter</div>
+
+    <input type="text" placeholder="Enter the input temperature" />
+    <section>
+        <label for="input-temp-units">input units:</label>
+
+        <select name="input-temp-units" id="input-temp-units">
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+        </select>
+
+        <label for="output-temp-units">output units:</label>
+
+        <select name="output-temp-units" id="output-temp-units" >
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+        </select>
+    </section>
+    <button type="button" id="btn-convert">
+        Convert Temperature
+    </button>
+    <label for="output-temp" id="output-temp"></label>
+    
+
+</body>
+<script src="temperature-convert.js"></script>
+
+</html>
