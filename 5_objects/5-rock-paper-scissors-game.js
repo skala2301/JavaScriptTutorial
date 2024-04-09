@@ -144,6 +144,7 @@ function restFromScore(){
     --score;
 }
 
+//sets score to initial values
 function restartScore(){
     score = INITIAL_SCORE;
     myScore.wins = 0;
@@ -162,11 +163,13 @@ function showResults(){
     
 }
 
+
+//Shos the dialog with the Wins, Loses and Draws
 function showDialog(){
-    const dialogCloseBtn = document.createElement("button");
+    const dialogCloseBtn = document.createElement("button");//creates a button
     dialog.innerHTML = `<p>Wins: ${myScore.wins}</p> <p>Loses: ${myScore.loses}</p><p>Draws: ${myScore.draws}</p>`;
     
-    dialogCloseBtn.addEventListener('click', ()=>{
+    dialogCloseBtn.addEventListener('click', ()=>{//add the functionality to close the dialog to the button
         dialog.close();
     })
     dialogCloseBtn.innerHTML = "Cerrar";

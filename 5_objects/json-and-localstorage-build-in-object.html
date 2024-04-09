@@ -9,17 +9,27 @@
 
 <body>
     <section>
-        A json object is an special javascript object usually used to send or receive data
-        <input type="text" placeholder="Enter product name" id="input-name">
-        <button id="set-prod-name">
-            Save to Local Storage
-        </button>
-        <button id="get-prod-name">
-            Load Product from Storage
-        </button>
-        <span id="loaded-product">
-            
-        </span>
+        <p style="margin-left: 10rem; margin-right: 10rem;">
+            A json object is an special javascript object usually used to send or receive data.
+            On this example there is a text field and two buttons, the text entered is the name of a product,
+            the product is an object and has other properties, the name is set to the one entered
+            in the text field when pushing one of the buttons, 'Save to Local Storage', and the object is stored
+            in the localStorage, if you push the button labeled 'Load Product from Storage' you get the stored object
+        </p>
+        <div style="display: flex; margin-left: 10rem; margin-right: 10rem; place-content: flex-end center;">
+            <input type="text" placeholder="Enter product name" id="input-name">
+            <button id="set-prod-name">
+                Save to Local Storage
+            </button>
+            <button id="get-prod-name">
+                Load Product from Storage
+            </button>
+            <span id="loaded-product">
+
+            </span>
+
+        </div>
+
     </section>
 
 
